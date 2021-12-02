@@ -8,7 +8,7 @@
             <div class="card-body"  style="display: flex; flex-direction: column;">
                 <div class="post-list-buttons" style="display: flex; flex-direction: row;margin-left: auto; margin-right: auto;">
                     <a href="{% url 'post_edit' post.id %}" class="btn btn-primary" style="padding: 0%; height: fit-content;">...</a>
-                    <h5 class="card-title" style="text-align: center; style="padding: 0%; height: fit-content;""><a href="{% url 'post_detail' post.id %}">{{post.title}}</a></h5>
+                    <h5 class="card-title" style="text-align: center; "><a href="{% url 'post_detail' post.id %}">{{post.title}}</a></h5>
                     <a href="{% url 'post_delete' post.id %}" class="btn btn-danger">X</a>
                 </div>
                 <h6 class="card-subtitle mb-2 text-muted" style="text-align: center;">-{{post.author}}</h6>
