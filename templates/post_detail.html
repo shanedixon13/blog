@@ -2,9 +2,11 @@
 {% block title %}{{post.title}}{% endblock title %} 
 
 {% block content %}
-    <h1 style="text-align: center;">{{post.title}}</h1>
-    <p style="color:grey; text-align: center;">-{{post.author}}</p>
+<div class="post-detail">
+    <h1>{{post.title}}</h1>
+    <p class="author">-{{post.author}}</p>
     <p>{{post.body}}</p>
     <a href="{% url 'post_edit' post.id %}" class="btn btn-primary">Edit</a>
     <a href="{% url 'post_delete' post.id %}" class="btn btn-danger">Delete</a>
+    </div>
 {% endblock content %}
