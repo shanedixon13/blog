@@ -6,25 +6,27 @@ body{
 
 
 .page-content{
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid red;
     height: fit-content;
-    width: 100%;
+    width: 100vw;
 }
 .page-content h1{
     text-align: center;
+    width: 100vw;
 }
 
 a {
     text-decoration: none;
 }
 
-input, textarea, select{
+input, textarea{
     background-color: lightgrey;
     width: 30rem;
+}
+
+select{
+    background-color: lightgrey;
+    width: 27rem;
+    text-align: center;
 }
 
 .card{
@@ -53,8 +55,26 @@ input, textarea, select{
 	padding: .5rem;
 }
 
+/*about_page */
+
+.about-page{
+    padding: 2rem;
+}
+
+
+
+
+
 /*post_list */
 
+
+.post-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
 
 .post-list-buttons{
     display: flex;
@@ -80,21 +100,45 @@ input, textarea, select{
 
 
 .post-new{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
 
+.post-new h1{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-new form{
     display: flex;
     flex-direction: column;
+    width: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.post-new form .form-areas{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-new .btn{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
 }
 
