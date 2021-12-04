@@ -7,9 +7,13 @@
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <div class="post-list-buttons">
-                    <a href="{% url 'post_edit' post.id %}" class="card-link">Edit</a>
+                    {% if post.author == user %}
+                        <a href="{% url 'post_edit' post.id %}" class="card-link">Edit</a>
+                    {% endif %}
                     <h5 class="card-title" style="text-align: center; "><a href="{% url 'post_detail' post.id %}">{{post.title}}</a></h5>
-                    <a href="{% url 'post_delete' post.id %}" class="card-link">Delete</a>
+                    {% if post.author == user  %}
+                        <a href="{% url 'post_delete' post.id %}" class="card-link">Delete</a>
+                    {% endif %}
                 </div>
                 <h6 class="card-subtitle mb-2 text-muted author">-{{post.author}}</h6>
                 <p class="card-text">{{post.body|truncatechars:50}}</p>
