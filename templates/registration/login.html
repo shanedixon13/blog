@@ -1,16 +1,17 @@
 {% extends 'base.html' %} 
 
-{% block title %}Create Post{% endblock title %} 
+{% block title %}Log In{% endblock title %} 
 
 {% block content %} 
     <div class="post-new">
-        <h1>Create Post</h1>
+        <h1>Log In</h1>
         <form method="POST">
             <div class="form-areas">
                 {% csrf_token %} 
                 {{ form.as_p }}
             </div>
-            <input type="submit" class="btn btn-success" value="Create">
+            <input type="submit" class="btn btn-success" value="Log In">
         </form>
+        <p>Don't have an account? <a href="{% url 'signup' %}"> Click here to join in the fun!</a></p>
     </div>
 {% endblock content %}
