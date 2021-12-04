@@ -3,10 +3,14 @@
 {% block title %}Edit Post{% endblock title %} 
 
 {% block content %} 
-    <h1>Edit Post</h1>
-    <form method="POST">
-        {% csrf_token %} 
-        {{ form.as_p }}
-        <input type="submit" class="btn btn-success">
-    </form>
+    <div class="post-edit">
+        <h1>Edit Post</h1>
+        <form method="POST">
+            <div class="form-areas">
+                {% csrf_token %} 
+                {{ form.as_p }}
+            </div>
+            <input type="submit" class="btn btn-success">
+        </form>
+    </div>
 {% endblock content %}
