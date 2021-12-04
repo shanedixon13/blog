@@ -55,12 +55,12 @@
 							<div class="left-side-nav">
 								<li class="nav-item">
 									<a class="nav-link" href="{% url 'about' %}"
-										>About My Blog</a
+										>About My Blog | </a
 									>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="{% url 'post_list' %}"
-										>Posts</a
+										>Posts | </a
 									>
 								</li>
 								<li class="nav-item">
@@ -73,7 +73,7 @@
 								{% if user.is_authenticated %}
 									<li class="nav-item">
 										<a class="nav-link" href="{% url 'password_change' %}"
-											>Change Password</a
+											>Change Password | </a
 										>
 									</li>
 									<li class="nav-item">
