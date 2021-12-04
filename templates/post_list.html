@@ -12,7 +12,7 @@
                     {% endif %}
                     <h5 class="card-title" style="text-align: center; "><a href="{% url 'post_detail' post.id %}">{{post.title}}</a></h5>
                     {% if post.author == user  %}
-                        <a href="{% url 'post_delete' post.id %}" class="card-link">Delete</a>
+                        <a href="{% url 'post_delete' post.id %}" class="card-link" style="color: red;">Delete</a>
                     {% endif %}
                 </div>
                 <h6 class="card-subtitle mb-2 text-muted author">-{{post.author}}</h6>

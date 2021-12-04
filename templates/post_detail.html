@@ -9,7 +9,7 @@
         {% endif %}
         <h1>{{post.title}}</h1>
         {% if post.author == user %}
-            <a href="{% url 'post_delete' post.id %}" class="card-link">Delete</a>
+            <a href="{% url 'post_delete' post.id %}" class="card-link" style="color: red;">Delete</a>
         {% endif %}
     </div>
     <p class="author">-{{post.author}}</p>
