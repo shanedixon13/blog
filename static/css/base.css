@@ -2,8 +2,8 @@ body{
     font-family: 'EB Garamond', serif;
     font-size: 1.2rem;
     background-color: grey;
-}
 
+}
 
 nav ul{
     display: flex;
@@ -37,16 +37,18 @@ a {
     text-decoration: none;
 }
 
-input, textarea{
+input{
     background-color: lightgrey;
-    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+textarea{
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-select{
-    background-color: lightgrey;
-    width: 27rem;
-    text-align: center;
-}
+
 
 .card{
 	width: 18rem;
@@ -90,42 +92,63 @@ select{
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
-    width: 75vw;
+    width: fit-content;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
     margin-top: 2rem;
     text-align: center;
 }
 
 .login h1{
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    height: fit-content;
+    margin: auto;
 }
 
 .login form{
     display: flex;
     flex-direction: column;
-    width: 34rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: fit-content;
+    min-height: fit-content;
 }
 
 .login form .form-areas{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+}
+
+.login form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
     margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.login input{
+    max-width: 30rem;
 }
 
 .login .btn{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.login submit{
+    max-width: 40rem;
+    margin: auto;
 }
 
 /*logout */
@@ -160,48 +183,68 @@ select{
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
-    width: 75vw;
+    width: fit-content;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
     margin-top: 2rem;
+    text-align: center;
 }
 
 .signup h1{
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    height: fit-content;
+    margin: auto;
 }
 
 .signup form{
     display: flex;
     flex-direction: column;
-    width: 34rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: fit-content;
+    min-height: fit-content;
 }
 
 .signup form .form-areas{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 .signup form .form-areas p{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.signup input{
+    max-width: 30rem;
 }
 
 .signup .btn{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.signup submit{
+    max-width: 40rem;
+    margin: auto;
 }
 
 /*password_change_form */
+
 
 .password-change{
     display: flex;
@@ -210,69 +253,66 @@ select{
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
-    width: 75vw;
+    width: fit-content;
+    height: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .password-change h1{
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    height: fit-content;
+    margin: auto;
 }
 
 .password-change form{
     display: flex;
     flex-direction: column;
-    width: 34rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: fit-content;
+    min-height: fit-content;
 }
 
 .password-change form .form-areas{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 .password-change form .form-areas p{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+    height: fit-content;
+}
+.password-change input{
+    max-width: 30rem;
 }
 
 .password-change .btn{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 40vw;
+    
 }
 
-/*password-changed */
-
-.password-changed{
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-	background-color: black;
-	color: lightgrey;
-	border-radius: 10px;
-    width: 75vw;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    text-align: center;
+.password-change submit{
+    max-width: 40rem;
+    margin: auto;
 }
 
-.password-changed h1{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
-}
 
 
 /*post_list */
@@ -343,43 +383,68 @@ select{
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
-    width: 75vw;
+    width: 90vw;
+    min-height: 85vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .post-new h1{
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    height: fit-content;
+    margin: auto;
 }
 
 .post-new form{
     display: flex;
     flex-direction: column;
-    width: 34rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 80vw;
+    min-height: 75vh;
 }
 
 .post-new form .form-areas{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin: auto;
+    min-width: 75vw;
+    height: fit-content;
+}
+
+.post-new form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
     margin-right: auto;
+    margin-left: auto;
+    min-width: 60vw;
+    height: fit-content;
+}
+
+.post-new input{
+    width: 40vw;
+}
+
+.post-new textarea{
+    width: 40vw;
+    min-height: 50vh;
 }
 
 .post-new .btn{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 40vw;
+    
 }
 
+.post-new submit{
+    max-width: 40rem;
+    margin: auto;
+}
 
 
 /*post_edit */
@@ -391,43 +456,65 @@ select{
 	background-color: black;
 	color: lightgrey;
 	border-radius: 10px;
-    width: 75vw;
+    width: 90vw;
+    min-height: 85vh;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .post-edit h1{
     width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    height: fit-content;
+    margin: auto;
 }
 
 .post-edit form{
     display: flex;
     flex-direction: column;
-    width: 34rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
     text-align: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 80vw;
+    min-height: 75vh;
 }
-
-.post-edit form :nth-child(2){
-    text-align: center;
-}
-
 
 .post-edit form .form-areas{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    margin: auto;
+    min-width: 75vw;
+    height: fit-content;
+}
+
+.post-edit form .form-areas p{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
     margin-right: auto;
+    margin-left: auto;
+    min-width: 60vw;
+    height: fit-content;
+}
+
+.post-edit input{
+    width: 40vw;
+}
+
+.post-edit textarea{
+    width: 40vw;
+    min-height: 50vh;
 }
 
 .post-edit .btn{
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    max-width: 40vw;
+    
+}
+
+.post-edit submit{
+    max-width: 40rem;
+    margin: auto;
 }
